@@ -1,0 +1,26 @@
+@import "./reset.css";
+@import "./home.css";
+@import "./modal.css";
+
+:root {
+  --cor-primaria: #ffdbf1;
+  --cor-secundaria: #D15E88;
+  --cor-texto1: black;
+  --cor-texto2: white;
+  --cor-texto3: #D15E88;
+}
+
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+[data-anima="scroll"] {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.3s;
+}
+
+[data-anima="scroll"].ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
