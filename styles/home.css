@@ -278,40 +278,56 @@
 @media (max-width: 1000px) {
   .banner-intro {
     & h1 {
-      font-size: 2.5rem;
-      line-height: 2.5rem;
+      font-size: 2.5rem; /* Mantido */
+      line-height: 2.5rem; /* Mantido */
       padding: 10px 0;
+      text-align: center; /* Centraliza o título */
     }
     & p {
-      font-size: 1.15rem;
+      font-size: 1.15rem; /* Mantido */
+      text-align: center; /* Centraliza o texto */
     }
   }
   .categorias-lista {
+    display: grid; /* Muda para grid */
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 20px; /* Adiciona espaçamento entre as categorias */
+    & li {
+      text-align: center; /* Centraliza o texto */
+    }
     & li img {
-      max-height: 160px;
+      max-height: 220px; /* Aumentado de 200px para 220px */
+      width: auto; /* Para manter a proporção */
+    }
+    & li p {
+      font-size: 1.5rem; /* Mantido */
     }
   }
 }
 
 @media (max-width: 800px) {
-  .nav-menu li a {
-    font-size: 0.85rem;
-    padding: 10px 0;
-  }
+  
   .banner-intro {
     & h1 {
-      font-size: 2rem;
-      line-height: 2rem;
+      font-size: 2rem; /* Mantido */
+      line-height: 2rem; /* Mantido */
       padding: 10px 0;
+      text-align: center; /* Centraliza o título */
     }
     & p {
-      font-size: 1rem;
+      font-size: 1rem; /* Mantido */
       padding: 0.5rem;
+      text-align: center; /* Centraliza o texto */
     }
   }
   .categorias-lista {
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 15px; /* Adiciona espaçamento entre as categorias */
     & li img {
-      max-height: 140px;
+      max-height: 200px; /* Aumentado de 180px para 200px */
+    }
+    & li p {
+      font-size: 1.3rem; /* Mantido */
     }
   }
   .lista-produtos {
@@ -325,9 +341,7 @@
     justify-items: center;
   }
   .nav-menu {
-    place-self: center;
-    padding-bottom: 1.2rem;
-    font-size: 1.2rem;
+    display: none;
   }
   .nav-icons {
     place-self: center;
@@ -335,13 +349,15 @@
   }
   .banner-intro {
     & h1 {
-      font-size: 1.5rem;
+      font-size: 1.5rem; /* Mantido */
+      text-align: center; /* Centraliza o título */
     }
     & p {
-      display: none;
+      display: none; /* Mantido */
     }
     & a {
       padding: 0.75rem;
+      text-align: center;
     }
   }
 
@@ -349,11 +365,16 @@
     padding: 1rem 1rem;
   }
   .categorias-lista {
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 10px; /* Adiciona espaçamento entre as categorias */
+    & li {
+      margin: 0; /* Remove margens */
+    }
     & li p {
-      font-size: 1rem;
+      font-size: 1.1rem; /* Mantido */
     }
     & li img {
-      max-height: 100px;
+      max-height: 160px; /* Aumentado de 140px para 160px */
     }
   }
 }
@@ -361,21 +382,27 @@
 @media (max-width: 575px) {
   .banner-intro {
     & h1 {
-      font-size: 1.2rem;
-      font-weight: 600;
-      line-height: 1.2rem;
+      font-size: 1.2rem; /* Mantido */
+      font-weight: 600; /* Mantido */
+      line-height: 1.2rem; /* Mantido */
+      text-align: center; /* Centraliza o título */
     }
     & a {
       padding: 0.5rem;
-      font-size: 0.75rem;
+      font-size: 0.75rem; /* Mantido */
     }
   }
   .categorias-lista {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 10px; /* Adiciona espaçamento entre as categorias */
+    & li {
+      margin: 0; /* Remove margens */
+    }
     & li p {
-      font-size: 0.75rem;
+      font-size: 1rem; /* Mantido */
     }
     & li img {
-      max-height: 80px;
+      max-height: 100px; /* Mantido */
     }
   }
   .promocoes {
@@ -387,8 +414,13 @@
 
 @media (max-width: 510px) {
   .categorias-lista {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 8px; /* Adiciona espaçamento entre as categorias */
+    & li {
+      margin: 0; /* Remove margens */
+    }
     & li img {
-      max-height: 60px;
+      max-height: 80px; /* Mantido */
     }
   }
 

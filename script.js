@@ -5,3 +5,5 @@ import ModalLogin from "./script/modal_login.js";
 animacaoScroll();
 scrollSuave();
 ModalLogin();
+
+
